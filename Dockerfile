@@ -1,7 +1,7 @@
-FROM       michaelsauter/alpine:3.2
+FROM       michaelsauter/alpine:3.3
 MAINTAINER Michael Sauter <mail@michaelsauter.net>
 
-ARG postgres_version
+ARG postgres_version=9.4.5-r1
 
 RUN sudo apk-install postgresql=$postgres_version
 
