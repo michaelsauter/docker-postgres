@@ -1,4 +1,4 @@
-TAG ?= 9.4.5
+TAG ?= 9.5.0
 
 build: Dockerfile
 	docker build -t michaelsauter/postgres:$(TAG) .

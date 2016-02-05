@@ -1,7 +1,7 @@
 FROM       michaelsauter/alpine:3.3
 MAINTAINER Michael Sauter <mail@michaelsauter.net>
 
-RUN sudo apk-install postgresql=9.4.5-r1
+RUN sudo apk-install postgresql=9.5.0-r0 postgresql-contrib=9.5.0-r0
 
 ADD postgres /postgres
 RUN sudo chown postgres: /postgres
